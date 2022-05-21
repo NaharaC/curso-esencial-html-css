@@ -1,30 +1,67 @@
+@font-face {
+    font-family: charter; /*se debe designar un nombre a la fuente*/
+    src: url('../fonts/charter-regular.otf'); /*donde está ubicada la fuente*/
+    font-style: normal;/*estilo de la fuente*/
+    font-weight: 400; /*peso de la fuente, normalmente van de 100 en 100, y 400 es el peso de esas fuentes*/
+}
+
+@font-face {
+    font-family: charter; /*se debe designar un nombre a la fuente*/
+    src: url('../fonts/charter-italic.otf'); /*donde está ubicada la fuente*/
+    font-style: italic;/*estilo de la fuente*/
+    font-weight: 400; /*peso de la fuente, normalmente van de 100 en 100, y 400 es el peso de esas fuentes*/
+}
+
+@font-face {
+    font-family: charter; /*se debe designar un nombre a la fuente*/
+    src: url('../fonts/charter-bold.otf'); /*donde está ubicada la fuente*/
+    font-style: normal;/*estilo de la fuente*/
+    font-weight: bold; /*peso de la fuente, normalmente van de 100 en 100, y 400 es el peso de esas fuentes*/
+}
+
+@font-face {
+    font-family: charter; /*se debe designar un nombre a la fuente*/
+    src: url('../fonts/charter-bold-italic.otf'); /*donde está ubicada la fuente*/
+    font-style: italic;/*estilo de la fuente*/
+    font-weight: bold; /*peso de la fuente, normalmente van de 100 en 100, y 400 es el peso de esas fuentes*/
+}
+
+
 :root {
     font-size: 18px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+
 }
 
 body {
-    color: #212121;
+    color: var(--gray30);
+    font-family: charter;
+    /* font-family: "Open sans"; font-family se utiliza con comillas cuando la fuente tiene más de una palabra*/
+    /*font-family: system-ui; font-family solo funciona con fuentes instaladas en el computador*/
 }
 
 a {
-    color: #212121
+    color: var(--gray30)
 }
 
 header {
+    /* --gray10: red; Para cambiar el valor de una variable*/
     font-size: 14px;
-    color: #616161
+    color: var(--gray10);
 }
 
 header a {
-    color: #616161;
+    color: var(--gray10);
     text-decoration: none;
 }
 header a:hover{
-    color: #212121;
+    color: var(--gray30); /* cuando mause está sobre alguna parte del menú el color cambia a gris oscuro*/
 }
 
 nav details summary {
-    font-weight: bold;
+     font-weight: bold; /*títulos del resumen (summary) en negrita */
 }
 
 h1 {
